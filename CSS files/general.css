@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+    background-image: url("../icons/wp13167304-interestellar-4k-wallpapers.jpg"); /* Replace with your image path */
+    background-size: cover;                /* Makes it cover the entire area */
+    background-position: center;           /* Keeps it centered */
+    background-repeat: no-repeat;          /* Prevents repeating */
+    background-attachment: fixed;          /* Optional: makes background stay fixed while scrolling */
+    font-family: Arial, sans-serif;        /* Optional: fallback font */
+    margin: 0;                              /* Removes default margins */
+    padding: 0;
+}

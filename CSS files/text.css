@@ -1,0 +1,26 @@
+.info {
+    padding-left: 40px;
+    
+}
+
+.intro-text {
+    position: absolute;
+    top: 250px;
+    font-size: 70px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    width: 700px;
+    
+}
+.dev {
+    color: rgb(255, 94, 0);
+}
+.brief-text {
+    position: absolute;
+    font-family: Arial;
+    top: 500px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-size: 28px;
+    width: 800px;
+}
