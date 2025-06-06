@@ -1,28 +1,17 @@
 .login-page {
-    font-family: Arial;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 1000px;
-    top: 200px;
-    width: 300px;
-    height: 450px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 15px;
-}
-.login-here-page {
-    width: 280px;
-    height: 40px; 
-    font-weight: bold;
-    text-align: center;
-    color: rgb(255, 94, 0);
-    background-color: white;
-    font-size: 28px;
-    padding: 8px 0;
-    border-radius: 10px;
-    margin-bottom: 25px;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 5%;                      /* ✅ Always sticks to right side */
+  top: clamp(50px, 25vh, 200px);  /* ✅ Pushes it down a bit */
+  width: clamp(240px, 25vw, 350px); /* ✅ Resize with screen */
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .login-data {
@@ -30,29 +19,38 @@
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
+.login-here-page {
+  width: 100%;
+  font-size: clamp(18px, 3vw, 28px);
+  text-align: center;
+  background-color: white;
+  color: rgb(255, 94, 0);
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .input {
-    width: 280px;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    border-bottom: 2px;
-    border-style: solid;
-    border-color: rgba(255, 94, 0, 0.5);
-    font-size: 22px;
+  width: 100%;
+  font-size: clamp(14px, 2vw, 18px);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 94, 0, 0.5);
+  margin-bottom: 25px;
 }
+
 .login-button {
-    background-color: rgb(255, 94, 0);
-    color: black;
-    font-size: 20px;
-    padding-top: 5px;
-    height: 35px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    width: 280px;
-    margin: 12px;
-    cursor: pointer;
+  width: 100%;
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 10px 0;
+  background-color: rgb(255, 94, 0);
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
 .login-text {
     text-decoration: none;
     
@@ -80,11 +78,11 @@
 }
 .icon-tab {
     padding-top: 15px;
+    padding-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 280px;
-    height: 50px;
+    width: 100%;
 }
 .icon-img {
     filter: invert(1);  /* changes black to white */
