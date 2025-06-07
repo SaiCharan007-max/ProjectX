@@ -75,6 +75,12 @@
     justify-content: cover;
     align-items: left;
 }
+.search:hover {
+    background-color: rgb(208, 76, 0);
+}
+.search:active{
+    background-color: rgb(101, 37, 0);
+}
 .search-icon {
     width: 85%;
     width: 85%;
